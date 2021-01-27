@@ -5,7 +5,7 @@ module.exports = {
     storage: new multer.diskStorage({
         destination: path.resolve(__dirname, '..', '..', 'temp'),
         filename: function(req, res, callback) {
-            callback(null, "temp");
+            callback(null, "temp.pdf");
         }
     })
 };
