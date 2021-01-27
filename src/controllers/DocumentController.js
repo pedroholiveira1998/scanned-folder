@@ -9,11 +9,13 @@ module.exports = {
     },
 
     async store(req, res) {
-        const { title, content } = req.body;
+        const { title, content, pdf } = req.body;
+        console.log(req.file);
 
         const document = await Document.create({
             title,
-            content
+            content,
+            pdf,
         });
 
         return res.json(document);
