@@ -1,0 +1,7 @@
+<form [formGroup] = "uploadForm" (ngSubmit)="onSubmit()">
+    title: <input type="text" name="title" formControlName="title" />
+    content: <input type="text" name="content" formControlName="content" />
+    <input type="file" name="pdf" (change)="onFileSelect($event)" />
+    <button type="submit">Send</button>
+</form>
+  
