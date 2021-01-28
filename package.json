@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/pedroholiveira1998/scanned-folder#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.11.13",
     "multer": "^1.4.2",

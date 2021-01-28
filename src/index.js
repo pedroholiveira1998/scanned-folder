@@ -1,6 +1,7 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-const port = process.env.PORT || '8000';
+const port = process.env.PORT || '3000';
 
 const mongoose = require('mongoose');
 const db = mongoose.connection;
@@ -20,4 +21,5 @@ db.once('open', function() {
 });
 
 app.use(express.json());
+app.use(cors());
 app.use(require('./routes'));
