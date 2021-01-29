@@ -4,7 +4,7 @@ const PdfParse = require('../config/PdfParse');
 module.exports = {
     async index(req, res) {
 
-        const document = await Document.find();
+        const document = await Document.find().sort({_id:-1});
 
         return res.json(document);
     },
