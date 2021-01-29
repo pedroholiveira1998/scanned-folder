@@ -1,0 +1,29 @@
+<!-- <div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let document of documents">
+        <td>{{ document.title }}</td>
+        <td>{{ document.content }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+
+<div class="container">
+  <div class="content">
+    <div class="container-content" *ngFor="let document of documents">
+      <div class="title">
+        {{ document.title }}
+      </div>
+      <div class="content-text">
+        {{ document.content }}
+      </div>
+    </div>
+  </div>
+</div>

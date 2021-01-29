@@ -1,0 +1,42 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #eee;
+    padding-top: 65px;
+}
+
+.content {
+    margin: auto;
+    width: 60%;
+    height: 80vh;
+    background: #191970;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    overflow-y: auto;
+}
+
+.container-content {
+    width: 95%;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+
+.title{
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+.content-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 20px;
+    padding: 20px;
+}

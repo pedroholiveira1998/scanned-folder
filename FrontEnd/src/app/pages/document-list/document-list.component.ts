@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../services/api.service';
-import { Document } from '../models/document.model';
+import { ApiService } from '../../services/api.service';
+import { Document } from '../../models/document.model';
 
 @Component({
   templateUrl: './document-list.component.html',

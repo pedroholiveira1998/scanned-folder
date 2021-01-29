@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DocumentListComponent } from './document-list/document-list.component';
-import { DocumentStoreComponent } from './document-store/document-store.component';
+import { DocumentListComponent } from './pages/document-list/document-list.component';
+import { DocumentStoreComponent } from './pages/document-store/document-store.component';
 
 const routes: Routes = [
   { path: 'list', component: DocumentListComponent },

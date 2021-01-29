@@ -4,14 +4,18 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { DocumentListComponent } from './document-list/document-list.component';
-import { DocumentStoreComponent } from './document-store/document-store.component';
+import { DocumentListComponent } from './pages/document-list/document-list.component';
+import { DocumentStoreComponent } from './pages/document-store/document-store.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DocumentListComponent,
-    DocumentStoreComponent
+    DocumentStoreComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
   BrowserModule,
@@ -20,6 +24,7 @@ import { DocumentStoreComponent } from './document-store/document-store.componen
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [NavbarComponent, FooterComponent]
 })
 export class AppModule { }
